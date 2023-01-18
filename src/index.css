@@ -5,9 +5,8 @@
 /* Badges */
 .badge {
   display: flex;
-  width: 15rem;
   height: 5rem;
-  margin: 1rem;
+  margin: 0.5rem 1rem;
   justify-content: space-between;
   align-items: center;
   border-radius: 0.5rem;
@@ -24,8 +23,20 @@
 
 /* BadgeLists */
 .badge-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .badge-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .badge-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
