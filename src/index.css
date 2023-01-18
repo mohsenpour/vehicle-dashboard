@@ -1,7 +1,8 @@
+/* Badges */
 .badge {
   display: flex;
-  max-width: 15rem;
-  height: 4rem;
+  width: 15rem;
+  height: 5rem;
   margin: 1rem;
   justify-content: space-between;
   align-items: center;
@@ -15,4 +16,12 @@
 
 .badge__value-unit {
   margin: 1rem;
+}
+
+/* BadgeLists */
+.badge-list {
+  display: grid;
+  grid-template-columns: repeat(4, 25fr);
+  justify-items: center;
+  align-items: center;
 }
