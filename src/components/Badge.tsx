@@ -1,12 +1,15 @@
 import React from 'react';
 
 export interface IBadgeProps {
-  name: string;
-  unit: string;
-  value: string;
+  _badge: {
+    name: string;
+    unit: string;
+    value: string;
+  };
 }
 
-export default function Badge({ name, unit, value }: IBadgeProps) {
+export default function Badge({ _badge }: IBadgeProps) {
+  const { name, unit, value } = _badge;
   return (
     <div className='badge'>
       <div className='badge__name'>{name}</div>

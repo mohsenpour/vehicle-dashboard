@@ -10,13 +10,8 @@ export default function BadgeList({ badges }: IBadgeListProps) {
   return (
     <div className='badge-list'>
       {badges.map((badge) => {
-        return (
-          <Badge
-            name={badge.name}
-            value={badge.value}
-            unit={badge.unit}
-          ></Badge>
-        );
+        const { _badge } = badge;
+        return <Badge _badge={_badge} key={_badge.name}></Badge>;
       })}
     </div>
   );
