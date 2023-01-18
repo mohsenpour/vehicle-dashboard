@@ -1,0 +1,18 @@
+.badge {
+  display: flex;
+  max-width: 15rem;
+  height: 4rem;
+  margin: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: rgb(233, 242, 242);
+}
+
+.badge__name {
+  margin: 1rem;
+}
+
+.badge__value-unit {
+  margin: 1rem;
+}
