@@ -4,7 +4,7 @@ import BadgeList from './components/BadgeList';
 function App() {
   return (
     <div>
-      <div className='dashboard__title'>Vehicle Metrics</div>
+      <div className='dashboard__title'>Vehicle Metrics:</div>
       <BadgeList badges={carData.content} />
     </div>
   );
