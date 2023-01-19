@@ -1,5 +1,12 @@
+body {
+  margin: 1rem;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
 .dashboard__title {
   margin: 1rem;
+  font-size: 2rem;
+  font-weight: 100;
 }
 
 /* Badges */
@@ -15,16 +22,22 @@
 
 .badge__name {
   margin: 1rem;
+  font-weight: bold;
 }
 
 .badge__value-unit {
   margin: 1rem;
 }
 
+.badge__unit {
+  color: #969696;
+}
+
 /* BadgeLists */
 .badge-list {
   display: flex;
   flex-direction: column;
+  margin: 1rem;
 }
 
 @media screen and (min-width: 900px) and (max-width: 1400px) {

@@ -14,7 +14,7 @@ export default function Badge({ _badge }: IBadgeProps) {
     <div className='badge'>
       <div className='badge__name'>{name}</div>
       <div className='badge__value-unit'>
-        {value} {unit}
+        {value} <span className='badge__unit'>{unit}</span>
       </div>
     </div>
   );
