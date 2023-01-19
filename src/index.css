@@ -27,6 +27,7 @@ body {
 
 .badge__value-unit {
   margin: 1rem;
+  white-space: nowrap;
 }
 
 .badge__unit {
